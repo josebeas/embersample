@@ -4,11 +4,18 @@
         <meta charset="utf-8" />
         <title>Aprendamos Ember.js en Codehero!</title>
         <script src="jquery-1.11.2.min.js"></script>
-        <script src="handlebars.runtime-v3.0.1.js"></script>
+        <script src="handlebars-v3.0.1.js"></script>
         <script src="ember.debug.js"></script>
         <script src="ember-template-compiler.js"></script>
         <script>
             window.App = Ember.Application.create();
+            var Marcapagina = Ember.Object.extend({
+
+                nombre: "Codehero",
+                url: "codehero.com"
+            });
+            
+            var marcapagina = Marcapagina.create();
         </script>
     </head>
   <body>
